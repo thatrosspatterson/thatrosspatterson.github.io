@@ -57,6 +57,7 @@ function returnNavList(isProject=false) {
         '<ul>' +
             '<li><a href="' + link + 'index.html">About</a></li>' +
             '<li><a href="' + link + 'projects.html">Projects</a></li>' +
+            '<li><a href="' + link + 'ross-patterson-resume.pdf">Resume</a></li>' +
             '<li><a href="' + link + 'contact.html">Contact</a></li>' +
         '</ul>' +
     '</nav>'
