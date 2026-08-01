@@ -1,3 +1,5 @@
+const HOME = "index.html";
+
 /**
  * Populates the header element
  */
@@ -64,9 +66,13 @@ function returnNavList(isProject=false) {
 }
 
 function createFloatingNav(isProject=false) {
+    let home = "";
+    if (isProject) {
+        home += "../"
+    }
     $('body').prepend('' +
         '<div id="floating-nav"><div>' + 
-        '<div><span>Ross Patterson</span></div>' +
+        '<div><a href="'+ home + HOME +'"><span>Ross Patterson</span></a></div>' +
         '<div>' + returnNavList(isProject)+ '</div>' + 
         '</div></div>'
     )
