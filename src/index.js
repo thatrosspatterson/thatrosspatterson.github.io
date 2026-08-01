@@ -1,23 +1,28 @@
-const HOME = "index.html";
+const nav = [
+    "/index.html",
+    "/projects.html",
+    "/ross-patterson-resume.pdf",
+    "/contact.html"
+];
 
 /**
  * Populates the header element
  */
-function createPageHeader(isProject=false) {
+function createPageHeader() {
     $('header').append('' +
         '<h1>Ross Patterson</h1>' + 
-        '<div id="desktop-nav">' + returnNavList(isProject) + '</div>'
+        '<div id="desktop-nav">' + returnNavList() + '</div>'
     )
 }
 
 /**
  * Adds content to the footer element when called
  */
-function createPageFooter(isProject=false) {
+function createPageFooter() {
     $('footer').append(
         '<div class="footer-sitemap">' +
             '<span>Ross Patterson</span>' + 
-            returnNavList(isProject) +
+            returnNavList() +
         '</div>' +
         '<div class="footer-notice">&copy; 2026 Ross Patterson</div>'
     )
@@ -38,10 +43,10 @@ function toggleMobileNavVisibility() {
 }
 
 /*Creates mobile navigation elements*/
-function createMobileNav(isProject=false) {
+function createMobileNav() {
     $('#canvas').prepend('' +
         '<div id="mobile-nav">' +
-            '<div id="mobile-nav-menu">' + returnNavList(isProject) + '</div>' +
+            '<div id="mobile-nav-menu">' + returnNavList() + '</div>' +
             '<button id="mobile-nav-button">Menu</button>' +
         '</div>'
     )
@@ -50,30 +55,22 @@ function createMobileNav(isProject=false) {
 }
 
 /*The navigation list*/
-function returnNavList(isProject=false) {
-    let link = "";
-    if (isProject) {
-        link = "../"
-    }
+function returnNavList() {
     return '<nav>' +
         '<ul>' +
-            '<li><a href="' + link + 'index.html">About</a></li>' +
-            '<li><a href="' + link + 'projects.html">Projects</a></li>' +
-            '<li><a href="' + link + 'ross-patterson-resume.pdf">Resume</a></li>' +
-            '<li><a href="' + link + 'contact.html">Contact</a></li>' +
+            '<li><a href="' + nav[0] + '">About</a></li>' +
+            '<li><a href="' + nav[1] + '">Projects</a></li>' +
+            '<li><a href="' + nav[2] + '">Resume</a></li>' +
+            '<li><a href="' + nav[3] + '">Contact</a></li>' +
         '</ul>' +
     '</nav>'
 }
 
-function createFloatingNav(isProject=false) {
-    let home = "";
-    if (isProject) {
-        home += "../"
-    }
+function createFloatingNav() {
     $('body').prepend('' +
         '<div id="floating-nav"><div>' + 
-        '<div><a href="'+ home + HOME +'"><span>Ross Patterson</span></a></div>' +
-        '<div>' + returnNavList(isProject)+ '</div>' + 
+        '<div><a href="' + nav[0] + '"><span>Ross Patterson</span></a></div>' +
+        '<div>' + returnNavList()+ '</div>' + 
         '</div></div>'
     )
 
