@@ -145,9 +145,11 @@ nav > ul > li {
     gap:1em;
 }
 /*Floating nav appearance*/
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1200px) {
     #floating-nav > div {
-        width: calc(100% - 200px);
+        min-width: calc(100% - 200px);
+        width: auto;
+        justify-content: center;
     }
     #floating-nav > div > div:first-child {
         display: none;
