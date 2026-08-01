@@ -68,6 +68,18 @@
     width: calc(50% - 4em);
     flex-grow: 1;
 }
+@media only screen and (min-width: 701px) {
+    .project-info-container.important > article {
+        border-left: 2px solid var(--ross-border-color);
+        padding: 0 0 0 1em;
+    }
+    .project-info-container.important article ul {
+        padding-inline-start: 1.5em;
+    }
+    .project-info-container.important > article ul > li {
+        padding-left: 0.5em;
+    }
+}
 @media only screen and (max-width: 700px) {
     .project-info-container {
         flex-direction: column;
@@ -79,4 +91,12 @@
     .project-info-container > div {
         width:100%;
     }
+}
+
+/*Problem statement*/
+.problem-statement {
+    background-color: var(--ross-light-grey);
+    border: 0.2em solid var(--ross-border-color);
+    border-radius: 1em;
+    padding: 0.5em 1em;
 }

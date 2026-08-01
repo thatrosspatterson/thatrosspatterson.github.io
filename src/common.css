@@ -6,6 +6,12 @@ body {
     position: relative;
 }
 
+h2 {
+    font-size:2em;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
 /*Canvas*/
 #canvas {
     width:calc(100% - 200px - 160px);
@@ -167,6 +173,13 @@ nav > ul > li {
     background: linear-gradient(0deg, var(--ross-blue-medium) 50%, transparent 50%);
     padding: 0.1em 0.4em;
     border-radius:0;
+}
+/*Shadow for links*/
+#desktop-nav nav > ul li a {
+    text-shadow:0.08em 0.08em rgb(255 255 255), -0.08em 0.08em rgb(255 255 255), 0.08em 0.04em rgb(255 255 255), -0.04em 0.08em rgb(255 255 255), 0em 0.08em rgb(255 255 255)
+}
+#floating-nav nav > ul li a {
+    text-shadow:0.08em 0.08em black;
 }
 #desktop-nav nav > ul li,
 #floating-nav nav > ul li {
