@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ross Patterson Project, Wesbite, UC Games Catalog, React">
+    <meta name="description" content="Ross Patterson Project, Website, UC Games Catalog, React">
     <title>UC Games Catalog | Ross Patterson</title>
     <link rel="icon" href="/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="/src/styles/styles.css">
@@ -47,7 +47,7 @@
                     <h2>Details</h2>
                     <ul>
                         <li>Second-year University Project</li>
-                        <li>Four Person Team</li>
+                        <li>Four-Person Team</li>
                         <li>Front-end Web Project</li>
                         <li>7-Week Project, starting in mid-July and ending in August</li>
                         <li>Built using React, using the Vite Plugin, with additional npm modules to create solution.</li>
@@ -91,7 +91,7 @@
                         </ul>
                         <p>As a group we decided we would need to conduct research to examine what ways games can be filtered and listed by looking at similar solutions on the internet. 
                             We would also get input from stakeholders to understand what information would be best served in this catalog concept, and what filtering patterns would be most useful.
-                            In addition, a JSON format to store gamemeta data already exists at the University but is used for a different purpose. We decided we could adapt it to suite the needs of the project.</p>
+                            In addition, a JSON format to store game metadata already exists at the University but is used for a different purpose. We decided we could adapt it to suite the needs of the project.</p>
                     </article>
                     <div style="max-width:400px">
                         <img src="/res/img/uc-games-catalog-stakeholders.svg" alt="Stakeholder input on the project" width="100%"/>
@@ -193,12 +193,13 @@
                         The second page would be game page, where information, media and links to resources would be loaded for a specific game. This page would be re-used for each game in the catalog.</p>
                     <ul>
                         <li>Dynamic filtering of the catalog through the use of React's UseState feature.</li>
-                        <li>Favouriting through the use of browser LocalStorage for customisable usage on a user by user basis.</li>
-                        <li>Searching within the listings was achieved using Fuse.js, an npm library used for efficient searching. The results of the search are applied to the catalog React state.</li>
+                        <li>Making favourites through the use of browser LocalStorage for customisable usage on a user by user basis.</li>
+                        <li>Searching within the listings was achieved using Fuse.js, a npm library used for efficient searching. The results of the search are applied to the catalog React state.</li>
                         <li>Quick links to game assets and resources alongside descriptions and people involved in the information for each game.</li>
                         <li>Easy to understand and expandable data format with a structured and template json format for storing metadata.</li>
                     </ul>
                 </article>
+                <img src="/res/img/uc-games-web-proto.jpg" alt="Development images of the React Prototype" width="100%" />
                 <article>
                     <h3>My Major Roles in Web Prototyping</h3>
                     <p>As this was a group project, we all contributed to the project in various ways. This was mainly decided based on our interests and strengths. My main responsibilities:</p>
@@ -215,32 +216,39 @@
 
             <section>
                 <h2>User Testing</h2>
-                <article>
-                    <h3>Participants</h3>
-                    <p>We had four participants in our user testing who were game development students from the University. This was fitting, as these people frequently 
-                        work with games and would be end users if the prototype were ever to be deployed.</p>
-                    <h3>A/B Testing with Filters</h3>
-                    <p>One thing we had in mind for testing was the way in which our filters functioned.</p>
-                    <ul>
-                        <li>We identified three different ways in which filters could be applied. This was because we have different categories under which filters can be applied, and multiple values for them.</li>
-                        <li>Filters consisted of categories such as "Genre", "Year", "Course" and so on.</li>
-                        <li>We tested two different methods of filtering without informing our testees of this change.</li>
+                <div class="project-info-container">
+                    <article>
+                        <h3>Participants</h3>
+                        <p>We had four participants in our user testing who were game development students from the University. This was fitting, as these people frequently 
+                            work with games and would be end users if the prototype were ever to be deployed.</p>
+                        <h3>A/B Testing with Filters</h3>
+                        <p>One thing we had in mind for testing was the way in which our filters functioned.</p>
                         <ul>
-                            <li>The first method was a broad way of filtering games. For a game to be displayed in the listing, it had to have at least one of the selected values, across any filter category.</li>
-                            <li>The second method produced narrower results. A game had to have at least one of the selected values under each category with selected values.</li>
+                            <li>We identified three different ways in which filters could be applied. This was because we have different categories under which filters can be applied, and multiple values for them.</li>
+                            <li>Filters consisted of categories such as "Genre", "Year", "Course" and so on.</li>
+                            <li>We tested two different (of three possible) methods of filtering without informing our testees of this change.</li>
+                            <li>
+                                <ul>
+                                    <li>The first method was a broad way of filtering games. For a game to be displayed in the listing, it had to have at least one of the selected values, across any filter category.</li>
+                                    <li>The second method produced narrower results. A game had to have at least one of the selected values under each category with selected values.</li>
+                                </ul>
+                            </li>
                         </ul>
-                    </ul>
-                    <p>We believed prior to testing the second method would more likely be favoured. Sure enough, user testing confirmed this. The testees were confused
-                        how more games started appearing when multiple values across categories were selected, because they were trying to find a game using a specific criteria.
-                    </p>
-                </article>
+                        <p>We believed prior to testing the second method would more likely be favoured. Sure enough, user testing confirmed this. The testees were confused
+                            how more games started appearing when multiple values across categories were selected, because they were trying to find a game using a specific criteria.
+                        </p>
+                    </article>
+                    <div style="max-width:400px">
+                        <img src="/res/img/uc-games-filter-opts.jpg" alt="Table comparing filter logic for the project" width="100%" />
+                    </div>
+                </div>
                 <article>
                     <h3>Further Feedback</h3>
                     <p>Something else valuable we realised with this research is that we aren't game experts, despite our discussions with our stakeholders. This was important for a few reasons:</p>
                     <ul>
                         <li>A lot of UI/UX decisions made reflected our own backgrounds in more generally applied web design and development.</li>
-                        <li>Our testees commented on how we broadly applied "Genre" filtering- our testees stated that usual game genres are based on smaller selection and supported by another category, such as theme.</li>
-                        <li>One participant thought the favouriting symbol should use a start rather than a heart, because of a heart's association with hitpoints in the game-world.</li>
+                        <li>Our testees commented on how we broadly applied "Genre" filtering - our testees stated that usual game genres are based on smaller selection and supported by another category, such as theme.</li>
+                        <li>One participant suggested the favourite symbol should use a star rather than a heart, because of a heart's association with hitpoints in the game-world.</li>
                     </ul>
                     <p>Development should always consider the end-user, even for the small things that may go overlooked.</p>
                 </article>
@@ -274,6 +282,12 @@
                         <li>Milestones, goals and tasks were clearly established with a timeline for when they should be delivered.</li>
                     </ul>
                 </article>
+            </section>
+
+            <section>
+                <h2>Demo</h2>
+                <p>This is a demo of the React Prototype.</p>
+                <iframe width="100%" height="auto" style="aspect-ratio: 16 / 9;" src="https://www.youtube.com/embed/i9xrRyU50sA" title="UC Games Catalog | React Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </section>
         </main>
         <load src="/src/components/footer.html" />
