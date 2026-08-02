@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ross Patterson Project, Publication, A Hat for an Elephant">
+    <title>A Hat for an Elephant | Ross Patterson</title>
+    <link rel="icon" href="/assets/favicon-Dy3BAYU2.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/common-CXogUJ4f.css">
+  <link rel="stylesheet" crossorigin href="/assets/project-CU6AVuBX.css">
+</head>
+<body>
+    <div id="floating-nav">
+    <div>
+        <div>
+            <a href="/"><span>Ross Patterson</span></a>
+        </div>
+        <div>
+            <nav>
+    <ul>
+        <li><a href="/">About</a></li>
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/ross-patterson-resume.pdf">Resume</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+</nav>
+        </div>
+    </div>
+</div>
+
+<script>
+    /**
+     * Scroll handler to track how far down the user has scrolled
+     * to determine if floating nav should be pulled up or down
+     */
+    $(document).on("scroll", function(){
+        let nav = document.querySelector('#floating-nav');
+        let docScroll = $(document).scrollTop();
+
+        if(docScroll >= nav.offsetHeight * 4) { 
+            nav.classList.add('is-visible');
+        }else {
+            nav.classList.remove('is-visible');
+        }
+    });
+</script>
+    <div id="canvas">
+        <div id="mobile-nav">
+    <div id="mobile-nav-menu">
+        <nav>
+    <ul>
+        <li><a href="/">About</a></li>
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/ross-patterson-resume.pdf">Resume</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+</nav>
+    </div>
+    <button id="mobile-nav-button">Menu</button>
+</div>
+<script>
+    function toggleMobileNavVisibility() {
+        const mobileNav = $('#mobile-nav')
+        mobileNav.toggleClass("is-visible");
+        if (mobileNav.hasClass("is-visible")) {
+            mobileNav.find("#mobile-nav-button").text("Hide Menu");
+        }else {
+            mobileNav.find("#mobile-nav-button").text("Menu");
+        }
+        
+    }
+    const mobileNavButton = document.querySelector("#mobile-nav-button");
+    mobileNavButton.addEventListener("click", toggleMobileNavVisibility);    
+</script>
+        <header>
+    <h1>Ross Patterson</h1>
+    <div id="desktop-nav">
+        <nav>
+    <ul>
+        <li><a href="/">About</a></li>
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/ross-patterson-resume.pdf">Resume</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+</nav>
+    </div>
+</header>
+        <main>
+            <section>
+                <div class="hero-shot">
+                    <div class="hero-shot-image">
+                        <img src="/assets/elephant-thumbnail-DoBwIKdN.png" alt="A Hat for an Elephant Logo." />
+                    </div>
+                    <div class="hero-shot-overlay">
+                        <article>
+                            <h2>A Hat for an Elephant</h2>
+                            <p>The digitisation of a hand written and illustrated children's book created by a relative. Produced using the Affinity Suite.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="project-info-container important">
+                    <article>
+                    <h2>About</h2>
+                    <ul>
+                        <li>Digitisation of a 28-page children's book created by a relative.</li>
+                        <li>This included scanning the original document and cleaning up each page up.</li> 
+                        <li>Each page in the book had its handwritten lines removed and replaced with digital text.</li>
+                        <li>Illustrations were colour-adjusted as the original book was created on blue-tinted watercolour paper.</li>
+                        <li>The original book logo was replaced with a vectorised one.</li>
+                        <li>The person this was done for was updated periodically during the process.</li>
+                    </ul>
+                    </article>
+                    <article>
+                    <h2>Details</h2>
+                    <ul>
+                        <li>Personal Project</li>
+                        <li>Publication</li>
+                        <li>Produced using Affinity Suite 2</li>
+                        <li>Started and completed in November 2025</li>
+                    </ul>
+                    </article>
+                </div>
+
+                <div class="project-info-container">
+                    <article>
+                        <figure>
+                            <img src="/assets/elephant-demo-before-Cx4PwT-a.jpg" width="100%" alt="Book before digitisation"/>
+                            <figcaption>The book before digitisation.</figcaption>
+                        </figure>
+                    </article>
+                    <article>
+                        <figure>
+                            <img src="/assets/elephant-demo-after-C2bzDaqP.jpg" width="100%" alt="Book after digitisation"/>
+                            <figcaption>The book after digitisation.</figcaption>
+                        </figure>                    
+                    </article>
+                </div>
+            </section>
+
+            <section>
+                <article>
+                    <h2>Vectorising the Logo</h2>
+                    <p>The first task I did when digitising this book was to re-create the logo as a vector object. As each of the letters in the original logo could be derived from combining circles, triangles and rectangles in different ways, I mainly used boolean methods to work out the main shape of each letter.</p>
+                    <img src="/assets/elephant-demo-1-CbVHg3AX.png" width="100%" alt="Elephant Logo Making"/>
+                    <p>I further adjusted and smoothed out parts of letters using pen and node tools. Finally, I rounded the corners of each letter to soften the appearance of the logo.</p>
+                    <img src="/assets/elephant-demo-2-CwMDlmtU.png" width="100%" alt="Elephant Logo Making"/>
+                    <p>Some letters required a bit more finesse, while others were simpler or could be created by re-using existing letters. I accompanied the main logo letters with a typeface for the "for an" part of the logo. The typeface I used did not have a matchning italicized font, so I warped it.</p>
+                    <img src="/assets/elephant-demo-3-Bu7owwsa.png" width="100%" alt="Elephant Logo Making"/>
+                </article>
+            </section>
+
+            <section>
+                <h2>Handling the Main Pages</h2>
+                <article>
+                    <h3>Bringing Illustrations to Life</h3>
+                    <p>Most of the work focused on the 20+ pages of body matter. My relative wanted the handwriting removed and replaced with digital text, but there was some extra work that would need to be done to standardise the appearance of the pages.</p>
+                    <p>My process started by removing handwriting that covered the illustrations. This was achieved by using different selection and healing tools within Affinity. I would then isolate the illustration from the main page. This was necessary to remove the texture of the watercolour paper, and allow for plain white to be used as the page background colour instead.</p>
+                    <img src="/assets/elephant-demo-4-DCEppWgp.png" width="100%" alt="Elephant Logo Making"/>
+                    <p>I would also remove any gridlines or pencil marks leftover from the initial lettering. It was important in this process to use healing tools spearingly, to keep the illustrations as close to their original appearance.</p>
+                    <p>Following the isolation of the illustration, it would then need to be colour-adjusted due to the colour of the paper, whilst also having the background blend out smoothly into what would now be pure white pages.</p>
+                    <img src="/assets/elephant-demo-5-CMbtUpQ0.png" width="100%" alt="Elephant Logo Making"/>
+                    <p>I adjusted the background and foreground separately. I completely re-coloured the background as that was the easiest way to remove the blue whilst retaining the tonal values, and feathered it out to help soften the edges. The foreground received more minor adjustments. The changes resulted in the illustrations being more vivid and brighter overall.</p>
+                </article>
+                <article>
+                    <h3>Page Composition</h3>
+                    <p>To put everything back together, I first chose a typeface which I felt was similar to the handwriting. Whilst not identical of course, I chose it for its thinness and roundness. With approval, I also added a white outline to the body text to create clarity on overlapping.</p>
+                    <img src="/assets/elephant-demo-6-DZoSc0rq.png" width="100%" alt="Elephant Logo Making"/>
+                    <p>All the pages used the same master page inside Affinity Publisher. This master included a 10mm margin and a 20mm guide on all sides. The 20mm guide was used as the edge for text, whilst the main 10mm margin would be for the illustrations.</p>
+                </article>
+            </section>
+
+            <section>
+                <h2>Before and After</h2>
+                <p>See some of the transformations below.</p>
+                <img src="/assets/elephant-demo-7-D8qERu7h.jpg" width="100%" alt="Elephant Logo Making"/>
+                <article class="disclosure">
+                    <p>In respect of intellectual property, a complete pdf of this publication is not publicly accessible.</article></p>
+            </section>
+
+        </main>
+        <footer>
+    <div class="footer-sitemap">
+        <span>Ross Patterson</span>
+        <nav>
+    <ul>
+        <li><a href="/">About</a></li>
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/ross-patterson-resume.pdf">Resume</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+</nav>
+    </div>
+    <div class="footer-notice">&copy; 2026 Ross Patterson</div>
+</footer>
+    </div>
+</body>
+</html>

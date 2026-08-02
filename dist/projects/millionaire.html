@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ross Patterson Project, Website, Who Wants to be a Millionaire?, Front-end">
+    <title>Who Wants to be a Millionaire? | Ross Patterson</title>
+    <link rel="icon" href="/assets/favicon-Dy3BAYU2.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/common-CXogUJ4f.css">
+  <link rel="stylesheet" crossorigin href="/assets/project-CU6AVuBX.css">
+</head>
+<body>
+    <div id="floating-nav">
+    <div>
+        <div>
+            <a href="/"><span>Ross Patterson</span></a>
+        </div>
+        <div>
+            <nav>
+    <ul>
+        <li><a href="/">About</a></li>
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/ross-patterson-resume.pdf">Resume</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+</nav>
+        </div>
+    </div>
+</div>
+
+<script>
+    /**
+     * Scroll handler to track how far down the user has scrolled
+     * to determine if floating nav should be pulled up or down
+     */
+    $(document).on("scroll", function(){
+        let nav = document.querySelector('#floating-nav');
+        let docScroll = $(document).scrollTop();
+
+        if(docScroll >= nav.offsetHeight * 4) { 
+            nav.classList.add('is-visible');
+        }else {
+            nav.classList.remove('is-visible');
+        }
+    });
+</script>
+    <div id="canvas">
+        <div id="mobile-nav">
+    <div id="mobile-nav-menu">
+        <nav>
+    <ul>
+        <li><a href="/">About</a></li>
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/ross-patterson-resume.pdf">Resume</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+</nav>
+    </div>
+    <button id="mobile-nav-button">Menu</button>
+</div>
+<script>
+    function toggleMobileNavVisibility() {
+        const mobileNav = $('#mobile-nav')
+        mobileNav.toggleClass("is-visible");
+        if (mobileNav.hasClass("is-visible")) {
+            mobileNav.find("#mobile-nav-button").text("Hide Menu");
+        }else {
+            mobileNav.find("#mobile-nav-button").text("Menu");
+        }
+        
+    }
+    const mobileNavButton = document.querySelector("#mobile-nav-button");
+    mobileNavButton.addEventListener("click", toggleMobileNavVisibility);    
+</script>
+        <header>
+    <h1>Ross Patterson</h1>
+    <div id="desktop-nav">
+        <nav>
+    <ul>
+        <li><a href="/">About</a></li>
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/ross-patterson-resume.pdf">Resume</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+</nav>
+    </div>
+</header>
+        <main>
+            <section>
+                <div class="hero-shot">
+                    <div class="hero-shot-image">
+                        <img src="/assets/millionaire1-BE60Tg78.png" alt="An image of the millionaire game." />
+                    </div>
+                    <div class="hero-shot-overlay">
+                        <article>
+                            <h2>Who Wants to be a Millionaire? Web Project</h2>
+                            <p>An application-like two-page website used for running quizzes in the Who Wants to be a Millionaire? format. Uses HTML, CSS and JavaScript. Includes matching graphics and music, and allows for extensive customisation with questions, quiz lengths, lifelines and more.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="project-info-container important">
+                    <article>
+                    <h2>About</h2>
+                    <ul>
+                        <li>Web recreation of Who Wants to be a Millionaire? with separate host and player screens.</li>
+                        <li>Customisable question sets by length and reward values.</li>
+                        <li>Ability to include multiple questions within a set to add variation between rounds.</li>
+                        <li>Vary gameplay by altering the number of answer options and lifelines available for each question.</i></li>
+                        <li>Includes the official sound track with queues for different modes, questions and lifelines.</li>
+                        <li>Includes dynamic backgrounds and logo that react to different parts of gameplay.</li>
+                    </ul>
+                    </article>
+                    <article>
+                    <h2>Details</h2>
+                    <ul>
+                        <li>Personal Project</li>
+                        <li>Front-end Web Project</li>
+                        <li>Start Date: April 2024</li>
+                        <li>End Date: August 2025</li>
+                        <li>Uses vanilla HTML, CSS and JavaScript, plus JQuery</li>
+                    </ul>
+                    </article>
+                </div>
+            </section>
+
+            <section>
+                <article>
+                    <h2>Intended Discoveries</h2>
+                    <p>This project was a personal project intended to explore parts of front-end web development and JavaScript further. This included:</p>
+                    <ul>
+                        <li>Experiment with using audio inside JavaScript, and how to manipulate and control it.</li>
+                        <li>Experiment with communication between two different browsing contexts using Broadcast Channel.</li>
+                        <li>Using front-end web code for an "app-like presentation purpose" rather than usual web content.</li>
+                        <li>Implement a user experience where the website needs to be able to handle different and unpredictable inputs.</li>
+                        <li>Try to implement a data source that can be used on the front-end to house quiz questions (spoiler alert, things didn't quite work out with this one)</li>
+                        <li>Push CSS animations to "recreate" graphics.</li>
+                    </ul>
+                    <p>While the outcome of this project was orientated towards learning front-end methods more than anything else, I always envisioned the project being used in a presentation setting as an alternative to existing quiz sites like Kahoot or Quizlet, except orientated towards a single person.</p>
+                </article>
+            </section>
+
+            <section>
+                <article>
+                    <h2>My Basic Requirements</h2>
+                    <p>Before I fully-committed to building this as a larger project, I had some basic criteria I wanted to meet when building a skeleton version.</p>
+                    <ul>
+                        <li>Prove it is possible to sync music and audio queues to questions and the status of the game. I felt music was important as without it the experience would not be the same.</li>
+                        <li>Prove it is possible to link together two different browsing contexts to have a "controls" screen and a "player" screen. The actual game has a host-player experience, so two screens would be necessary.</li>
+                        <li>Prove that a web recreation of the game can be a reusable solution so it can be used for different quiz questions. What's the point if it is stuck with the same questions?</li>
+                        <li>Create a setup on both screens that is reminiscent of the actual game.</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section>
+                <article>
+                    <h2>Early Development</h3>
+                    <div class="project-info-container">
+                        <article>
+                            <figure>
+                                <img src="/assets/millionaire-demo-1-DffU7udH.jpg" width="100%" alt="Front end appearance"/>
+                                <figcaption>Front end, interface with controls and familiar elements.</figcaption>
+                            </figure>
+                        </article>
+                        <article>
+                            <figure>
+                                <img src="/assets/millionaire-demo-2-BtyF2RL0.jpg" width="100%" alt="Backend code"/>
+                                <figcaption>Backend. L to R: question format, element creator, quiz life-cycle.</figcaption>
+                            </figure>                    
+                        </article>
+                    </div>
+                    <p>My initial skeleton focused on establishing a re-usable quiz format. For this I used a JavaScript object. Originally I was hoping to use an actual JSON file to store quizzes, but because I was not using a web server for this project, CORS prevented me from doing this. I offloaded creating elements seen on screen to JavaScript, so they could later be reused for both browsing contexts, and so they could interact with the quiz questions. At this time the quiz states progressed through a massive if-else chain. Crude, but effective.</p>
+                    <p>While at this point I did not have the two-screen set up working, the work to this point was useful for proof-of-concepts and working out how far I could take the project, and some of the limits and constraints I would be working within.</p>
+
+                    <div class="project-info-container">
+                        <article>
+                            <h3>Difficulties with Music</h3>
+                            <p>I believed music and audio were essential to the project. The original game has separate queues and background music for each question, and that is something I wanted to keep. 
+                            <p>I worked out each audio file would need to be defined so it could be called upon later in different places. At this stage, I was working with a fixed 15-length question set, so the music code was not customisable and was pre-defined. </p>
+                            <p>I was not at all happy with the way I had music working, even at this early stage. Every audio file being defined in the way it was came with huge readability issues, and the if-else chain was simply absurd. I would need to significantly re-invent this part of the project.</p>
+                        </article>
+                        <article>
+                            <figure>
+                                <img src="/assets/millionaire-demo-3-BvYVSR6Z.jpg" width="100%" alt="Code for audio object definitions and functions"/>
+                                <figcaption>Original audio object definitions and functions. Ughhh...</figcaption>
+                            </figure>                    
+                        </article>
+                    </div>
+                </article>
+            </section>
+
+            <section>
+                <h2>Iterative Improvements</h2>
+                <article>
+                    <div class="project-info-container">
+                        <div>
+                            <h3>Revised Question Format and Music Management</h3>
+                            <p>To resolve the ineffectiveness of my initial music management, I refactored the all the audio functions and where the music files where defined.</p>
+                            <p>As each question has its own music, I realised these could be quite efficiently defined in the same place as the questions themselves, and the function could index into this object to retrieve each audio object as the game progressed. This would also help with the customisation of quiz lengths later on, if you wanted more or less than 15 questions.</p>
+                        </div>
+                        <div>
+                            <figure>
+                                <img src="/assets/millionaire-demo-4-BU5wakqo.jpg" width="100%" alt="Revised quiz format and music management"/>
+                                <figcaption>Revised quiz format and music management</figcaption>
+                            </figure>  
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="project-info-container">
+                        <div>
+                            <h3>Lifeline Progress and Statistics</h3>
+                            <p>As part of the format being revised, I allow for more control of the games lifelines, so you could choose how many you wanted and after which question they were available. I began implementing some of the more basic ones, like 50:50 and Phone A Friend, while leaving a framework for ones that needed more time, like Ask the Audience.</p>
+                            <p>In addition, I implemented dynamic statistics to follow the progress of the game, such as how much money the player stood to win and loose during as the game progresses. </p>
+                        </div>
+                        <div>
+                            <figure>
+                                <img src="/assets/millionaire-demo-5-DQdrroTm.jpg" width="100%" alt="Revised Host Screen with Lifelines and Statistics"/>
+                                <figcaption>Revised Host Screen with Lifelines and Statistics</figcaption>
+                            </figure>  
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <section>
+                <h2>Revising the Front End</h2>
+                <article>
+                    <div class="project-info-container">
+                        <div>
+                            <h3>Establishing the second screen</h3>
+                            <p>As part of my criteria I always intended on having a second screen, which would be for the player, whilst the existing one would be for the host and person controlling the game.</p>
+                            <p>Despite initially intending to reuse the layout of the existing host screen, I realised this would be an ineffective choice for two reasons. One, the player screen would not have controls and statistics, resulting in wasted space. Two, my host screen was modelled off the actual TV show overlays. I came to see this was impractical and illogical for the intended use of the project, as I would only ever display the questions, lifelines and money tree on screen.</p>
+                            <p>I revised the layout by increasing the question block to full width, which would be useful for longer questions and readability, and re-draw the money tree as a floating box, rather than a side module. I would do the same with the lifelines, which also allowed space for a logo.</p>
+                        </div>
+                        <div>
+                            <figure>
+                                <img src="/assets/millionaire-demo-6-BNETYrew.jpg" width="100%" alt="Initial Player Screen"/>
+                                <figcaption>Initial Player Screen</figcaption>
+                            </figure>  
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <h3>Unifying the two screens</h3>
+                    <p>I soon felt that the solution I gave to the player screen could be adapted to the host screen as well, as I felt its use of space and symmetry was vastly superior.</p>
+                    <div class="project-info-container">
+                        <div>
+                            <figure>
+                                <img src="/assets/millionaire-demo-7-D2fDrWyD.jpg" width="100%" alt="Revised Host Screen using Player Screen Layout"/>
+                                <figcaption>Revised Host Screen using Player Screen Layout</figcaption>
+                            </figure>  
+                        </div>
+                        <div>
+                            <figure> 
+                                <img src="/assets/millionaire-demo-8-B9rKbenE.jpg" width="100%" alt="Player Screen"/>
+                                <figcaption>Player Screen</figcaption>
+                            </figure> 
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <section>
+                <h2>Foundation Done, Improvements In</h2>
+                <p>With further additions such as implementing missing lifelines and the ability to reset the game, I felt I had constructed a largely functional project and from this point further changes were to enhance visuals, optimisation and customisation.</p>
+                <article>
+                    <h3>Major Refactoring</h3>
+                    <p>I made many changes improvements to the project, some of which focused on backend functionality and others that were focused on the experience.</p>
+                    <ul>
+                        <li>I refactored GUI functions to create or modify content on screen to shared JavaScript file which would be used by both screens. A helper method would be called on the Host Screen, which would run the function for the Host Screen, and also broadcast a message to the Player Screen to tell it to run it too.</li>
+                        <li>I unfixed the number of options for each question away from four. This allows for true/false questions or three option questions for when writing quizzes. Theoretically the number is unlimited, but only six elements can fit on screen. This change had lots of trickle on effects, such Lifeline being able to handle varying option lengths.</li>
+                        <li>The responsiveness of the webpages was changed to be based off the vertical window space. Prior to this, some elements were at fixed size, while others (including text) were scaled by JavaScript. This solved things like overlapping and misaligned elements across different screen resolutions and aspect ratios.</li>
+                    </ul>
+                </article>
+                
+                <article>
+                    <div class="project-info-container">
+                        <div>
+                            <h3>Lifeline Expansion</h3>
+                            <p>Throughout the development I added a total of six lifelines, plus the ability to set "safety nets" or "milestones" on the money tree during the game. These lifelines included "50:50", "Phone a Friend", "Ask the Audience", "Ask the Host", "Double Dip" and "Switch". </p>
+                            <p>Lifelines that depended on human interaction such as Phone a Friend and Ask the Host were quite basic implementations. For Ask the Audience, I included to options, a way to input a headcount which would convert votes into percentages, and a computer generated random result, which would bias the correct answer, but less so the further the player progressed.</p>
+                            <p>I would later change how lifelines were assigned in the quiz format. Initially, they were fixed and the settings for them were independent of the quiz questions loaded into the game. By changing this, different quizzes could choose how many lifelines were available, and any number of lifelines could be granted before each question loaded, and repeatedly for the same ones.</p>
+                        </div>
+                        <div>
+                            <figure>
+                                <img src="/assets/millionaire-demo-9-ChWe_12K.png" width="100%" alt="Ask the Audience Lifeline"/>
+                                <figcaption>Ask the Audience (Host Screen)</figcaption>
+                            </figure> 
+                        </div>
+                    </div>
+                </article>
+
+                <article>
+                    <h3>Question Rotation Logic</h3>
+                    <p>I evolved the question rotation logic of the quiz many times. Initially, only one question could be assigned to each question in the money tree. For example, for a 15 question length quiz, there would only be 15 questions.</p>
+                    <p>To have multiple rounds at a time without swapping out the question file, I changed this so multiple questions could be assigned to each question on the money tree (I called these "sub questions" internally to differentiate from the question length of the quiz). When starting a question on the money tree, a random (sub) question of those available for that question would be selected. That specific (sub) question could not be used again until all available (sub) questions were used, or the page was refreshed/reloaded.</p>
+                    <p>This was largely effective at producing variated back-to-back rounds provided enough questions were created. However, it became problematic when questions of the same topic were rolled one after the other. To maintain random selection whilst reducing this annoyance, I added question categories.</p>
+                    <p>The final question rotation logic worked as follows: when rolling the next question, questions of unseen categories would be prioritised and chosen at random. If no new categories were left, it would choose a random question of those unseen, but ignoring categories. If all questions had been seen, the pool of (sub) questions for the question would be reset. </p>
+                </article>
+
+                <article>
+                    <h3>Bringing the Logo to Life</h3>
+                    <p>Initially I used a static picture of the Millionaire Logo for the centre of the player screen. However, I always felt this was rather bland and could be used as an opportunity to make the experience more "immersive" by having it respond to events. This is true also for the 2018 reboot of the show, which features a large animated logo in the background. Most of the animations and states I chose to model directly from the show, while I took creative liberty with some of the others.</p>
+                    <figure>
+                        <img src="/assets/millionaire-demo-logos-1-HNpQQBVK.jpg" width="100%" alt="Millionaire Logos"/>
+                        <figcaption>Some of the logo states</figcaption>
+                    </figure> 
+                    <p>The logo is really brought to life with animations, using colour, scaling and many other transformations. The logo is created simply by using many html elements, plus some images to overlay the typeface. A canvas is only used to produce particles. Due to the number of layers, rendering the page can be demanding at times.</p>
+                    <figure>
+                        <img src="/assets/millionaire-demo-logos-2-FE3oPo30.jpg" width="100%" alt="More Millionaire Logos"/>
+                        <figcaption>More logo states</figcaption>
+                    </figure> 
+                </article>
+            </section>
+
+            <section>
+                <article>
+                    <h2>Retrospective</h2>
+                    <p>This was an enjoyable explorative project. Whilst it certainly could be improved in many ways, I was quite happy with the end result. If I were to expand on the project, some things I would consider doing would be:</p>
+                    <ul>
+                        <li>Run the project through a webserver so that actual JSON files could be used to store quiz data rather than using a JavaScript object in a js file. This would help polish the format. The loading of quizzes could be done in a GUI, rather than manually editing the import statements.</li>
+                        <li>Include more checks and tests for potential errors, particularly where the quiz questions may not be formatted correctly or have missing data. There are lots of edge cases that could probably break the project.</li>
+                        <li>Create a separate app or site to create quizzes in the JSON format using a GUI, to eliminate ambiguity when writing quizzes and speed up the process.</li>
+                        <li>Create a third screen so that the host does not necessarily have to be the person controlling the quiz. In this scenario, there would be a "host", "player" and "control" screen.</li>
+                        <li>Optimise the logo. The logo can be quite resource demanding because of the number of html elements being animated with css. Utilising canvas more could help with this.</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section>
+                <h2>Demo</h2>
+                <p>Watch a demo of the Player Screen in action.</p>
+                <iframe width="100%" height="auto" style="aspect-ratio: 16 / 9;" src="https://www.youtube.com/embed/odoCCKhpRK4" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
+
+            <section>
+                <article class="disclosure">
+                    <p>This project is not publicly accessible. Access may be granted upon request.</p>
+                    <p>This is an unofficial personal project. All trademarks and visual assets related to Who Wants to Be a Millionaire? belong to their respective owners. This project is not affiliated with, endorsed, or approved by Sony Pictures Television or any associated parties.</p>
+                </article>
+            </section>
+
+        </main>
+        <footer>
+    <div class="footer-sitemap">
+        <span>Ross Patterson</span>
+        <nav>
+    <ul>
+        <li><a href="/">About</a></li>
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/ross-patterson-resume.pdf">Resume</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+</nav>
+    </div>
+    <div class="footer-notice">&copy; 2026 Ross Patterson</div>
+</footer>
+    </div>
+</body>
+</html>
