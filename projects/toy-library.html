@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/src/styles/styles.css">
     <link rel="stylesheet" href="/src/styles/common.css">
     <link rel="stylesheet" href="/src/styles/project.css">
+    <link rel="stylesheet" href="/src/styles/hero.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet"> 
@@ -21,17 +22,12 @@
         <load src="/src/components/header.html" />
         <main>
             <section>
-                <div class="hero-shot">
-                    <div class="hero-shot-image">
-                        <img src="/res/img/toy-library-hero.jpg" alt="Hero image for the Toy Library project." />
-                    </div>
-                    <div class="hero-shot-overlay">
-                        <article>
-                            <h2>Toy Library Figma Demo</h2>
-                            <p>A small Figma project focused on creating an accessible brand identity applied to a small-scale Figma app focused on a specific user flow.</p>
-                        </article>
-                    </div>
-                </div>
+                <load 
+                    src="/src/components/project-hero.html" 
+                    name="Toy Library Figma App" 
+                    img="/res/img/toy-library-hero.jpg"
+                    description="A small Figma project focused on creating an accessible brand identity applied to a small-scale Figma app focused on a specific user flow."
+                />
             </section>
 
             <section>

@@ -1,0 +1,121 @@
+/*Hero shot*/
+.hero-shot {
+    position:relative;
+    overflow: hidden;
+    color:white;
+}
+.hero-shot .hero-shot-image {
+    position: relative;
+}
+.hero-shot .hero-shot-image img {
+    width:100%;
+    height:auto;
+    display:block;
+}
+.hero-shot .hero-shot-overlay {
+    width:calc(100% - 12%);
+    padding:2vw 6%;
+    bottom:0;
+    height: calc(100% - 4vw);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+}
+.hero-shot h2 {
+    font-size:3em;
+    margin:0;
+}
+
+/*Hero shot on desktop*/
+@media screen and (min-width: 1025px) {
+    .hero-shot {
+        max-height: 50vw;
+        /* aspect-ratio: 2 / 1; */
+        width: 100%;
+    }
+    .hero-shot .hero-shot-overlay {
+        position:absolute;
+        background: linear-gradient(transparent 25%, var(--ross-blue-dark) 100%), linear-gradient(transparent 25%, var(--ross-blue-dark) 100%);
+    }
+}
+/*Hero shot on mobile*/
+@media screen and (max-width: 1024px) {
+    .hero-shot .hero-shot-overlay {
+        background-color: var(--ross-blue-dark);
+        top: -1px;/*deals with hairline between elements*/
+        position: relative;
+    }
+    .hero-shot .hero-shot-image::before {
+        content: "";
+        background: linear-gradient(transparent 25%, var(--ross-blue-dark) 100%);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left:0;
+        right:0;
+    }
+    .hero-shot h2 {
+        font-size:2em;
+    }
+}
+/*Hero shot on phone*/
+@media screen and (max-width: 640px) {
+    .hero-shot h2 {
+        font-size:1.2em;
+    }
+    .hero-shot .hero-shot-overlay p {
+        font-size:0.8em;
+        line-height:1.5em;
+    }
+}
+
+.hero-shot blockquote {
+    position: relative;
+    text-align: left;
+    font-size:1.3em;
+    padding:1em 2em 1em 3em;
+    margin:0;
+    line-height:1.5em;
+    margin:0 1em 1em 1em;
+    filter:drop-shadow(0 0 0.8em black)
+}
+
+.hero-shot blockquote::before {
+    content: "“";
+    position: absolute;
+    top:0.3em;
+    left:0;
+    font-size: 5em;
+    color: var(--ross-blue-light);
+}
+
+.hero-shot blockquote::after {
+    content: "”";
+    position: absolute;
+    bottom:0;
+    right:0;
+    font-size: 5em;
+    color: var(--ross-blue-light);
+}
+
+@media only screen and (max-width: 640px) {
+    .hero-shot blockquote {
+        padding:1em 0 0 0;
+        font-size:1em;
+    }
+    .hero-shot blockquote::before {
+        opacity:0.3;
+        z-index:-1;
+    }
+    .hero-shot blockquote::after {
+        opacity:0.3;
+        bottom:-0.2em;
+    }
+}
+
+@media only screen and (max-width: 1240px) {
+    .hero-shot blockquote {
+        font-size:1em;
+    }
+}

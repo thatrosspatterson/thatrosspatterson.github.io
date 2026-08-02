@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/src/styles/styles.css">
     <link rel="stylesheet" href="/src/styles/common.css">
     <link rel="stylesheet" href="/src/styles/project.css">
+    <link rel="stylesheet" href="/src/styles/hero.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet"> 
@@ -21,17 +22,12 @@
         <load src="/src/components/header.html" />
         <main>
             <section>
-                <div class="hero-shot">
-                    <div class="hero-shot-image">
-                        <img src="/res/img/uc-games-catalog.png" alt="The Landing page of the catalog." />
-                    </div>
-                    <div class="hero-shot-overlay">
-                        <article>
-                            <h2>UC Games Catalog</h2>
-                            <p>A second-year group project from the University of Canterbury that is a prototype catalog to house all the games produced from various places over various years at the university.</p>
-                        </article>
-                    </div>
-                </div>
+                <load 
+                    src="/src/components/project-hero.html" 
+                    name="UC Games Catalog" 
+                    img="/res/img/uc-games-catalog.png"
+                    description="A second-year group project from the University of Canterbury that is a prototype catalog to house all the games produced from various places over various years at the university."
+                />
             </section>
 
             <section>

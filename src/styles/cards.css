@@ -94,20 +94,43 @@
 @media screen and (max-width: 640px) {
     .project-card-container {
         grid-template-columns: 100%;
+        gap:1em;
     }
     .project-card {
-        border-bottom-width:0;
-        border-width:0 0 0 2px;
-        border-radius:0 7px 7px 0;
+        border-radius:0;
+        border-width:0 0 2px 0;
+        background-color: transparent;
+    }
+    .project-card-container .project-card:last-child {
+        border-width:0;
+    }
+    .project-card h3 {
+        font-size:1.3em;
     }
     .project-card article {
         flex-direction:row-reverse;
-        padding:1em 1em 0.5em 0.7em;
+        flex-wrap:wrap;
+        padding:0 0 1em 0;
         height:unset;
     }
+    .project-card > article .project-card-text {
+        margin:0 0.6em 0 0;
+        min-width:clamp(200px, 55%, 100%);
+    }
     .project-card .project-card-image {
-        width:25%;
-        min-width:80px;
+        width:40%;
+        min-width:min-content;
+        margin:0 0 0.6em 0;
+        display:block;
+        flex-grow:1;
+    }
+    .project-card .project-card-image-container {
+        width:100%;
+        height:auto;
+        aspect-ratio: 16 / 10;
+        min-width:120px;
+        min-height:75px;
+        margin:0;
     }
     .project-card .project-card-image > img{
         width:100%;
