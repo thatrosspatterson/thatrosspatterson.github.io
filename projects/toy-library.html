@@ -5,23 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Ross Patterson Project, Figma, Brand Identity, Toy Library, Accessibility, Visual Impairment">
     <title>Toy Library | Ross Patterson</title>
-    <link rel="icon" href="../res/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="../src/styles.css">
-    <link rel="stylesheet" href="../src/common.css">
-    <link rel="stylesheet" href="../src/project.css">
+    <link rel="icon" href="/res/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/src/styles.css">
+    <link rel="stylesheet" href="/src/common.css">
+    <link rel="stylesheet" href="/src/project.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet"> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
+    <load src="/components/floating-nav.html" />
     <div id="canvas">
-        <header></header>
+        <load src="/components/mobile-nav.html" />
+        <load src="/components/header.html" />
         <main>
             <section>
                 <div class="hero-shot">
                     <div class="hero-shot-image">
-                        <img src="../res/img/toy-library-hero.jpg" alt="Hero image for the Toy Library project." />
+                        <img src="/res/img/toy-library-hero.jpg" alt="Hero image for the Toy Library project." />
                     </div>
                     <div class="hero-shot-overlay">
                         <article>
@@ -68,7 +70,7 @@
                 <h2>How Visual Impairment can Impact User Experience</h2>
                 <p>There are just about an infinite number of ways to create websites that look and feel different to anything else. What makes a website pleasing to look at though? Quick to navigate? Easy to read? Feel familiar? And how do design choices impact those with visual impairment and accessibility needs?</p>
                 <p>Visual impairment can affect people in a number ways, with there being various means to address each of them.</p>
-                <img src="../res/img/library-visual-impairment.png" alt="Impact and implications of Visual Impairment" width="100%" />
+                <img src="/res/img/library-visual-impairment.png" alt="Impact and implications of Visual Impairment" width="100%" />
                 <p>Exploring how to address visual impairment is one of the challenges of this project, and why a Toy Library is the subject- with many existing sites not addressing these concerns.</p>
             </section>
 
@@ -90,7 +92,7 @@
                             </ul>
                         </div>
                         <div style="max-width:250px">
-                            <img src="../res/img/library-example.png" width="100%" />
+                            <img src="/res/img/library-example.png" width="100%" />
                         </div>
                     </div>
                 </article>
@@ -125,7 +127,7 @@
                 <h2>Journey Map and Focused User Flow</h2>
                 <p>Due to the time and scope of the project, only a single core user-flow could be focused on for development rather than looking at an entire app workflow. </p>
                 <p>To select a suitable and most beneficial user flow that would make the most difference to our target users, a user journey map was developed to find pain points in the experience of a parent looking to find toys to rent for their child.</p>
-                <img src="../res/img/library-journey-map.jpg" width="100%" alt="User Journey Map of Parent using Toy Library apps/websites" />
+                <img src="/res/img/library-journey-map.jpg" width="100%" alt="User Journey Map of Parent using Toy Library apps/websites" />
                 <p>Two key areas were identified:</p>
                 <ol>
                     <li>Browsing/Scouting: when parents are browsing through listings of different toys to choose from.</li>
@@ -138,16 +140,16 @@
                 <article>
                     <h3>Crazy 8s</h3>
                     <p>To brain-dump different ideas and concepts built around the two focus areas, a set of "Crazy 8s" were produced for each to rapidly come up with different ideas and ways of addressing user needs in these flows.</p>
-                    <img src="../res/img/library-crazy8s.jpg" alt="Crazy 8 ideas for Toy Library App" width="100%"/>
+                    <img src="/res/img/library-crazy8s.jpg" alt="Crazy 8 ideas for Toy Library App" width="100%"/>
                 </article>
                 <article>
                     <h3>Wireframes</h3>
                     <p>Wireframes were based off of the initial ideas, selecting different parts from different ideas that would be able to work effectively to address user needs in keeping with the seven principles.</p>
-                    <img src="../res/img/library-wireframes1.png" alt="Initial wireframes for Toy Library App" width="100%"/>
+                    <img src="/res/img/library-wireframes1.png" alt="Initial wireframes for Toy Library App" width="100%"/>
                     <p>These were then further revised given my own assessment of them and with feedback from others. In terms of addressing the principles, more contrast could be used across the screens and uppercase fonts could be remove for accessibility. <!--
                     -->There were also questions about using "Rent" or "Add to Cart" for the label on the rent button, and if it should be pinned when the user scrolls. Top Navigation was also identified as a "dead space", as it served no actual function.
                     </p>
-                    <img src="../res/img/library-wireframes2.jpg" alt="Revised wireframes for Toy Library App" width="100%"/>
+                    <img src="/res/img/library-wireframes2.jpg" alt="Revised wireframes for Toy Library App" width="100%"/>
                     <p>In the revised wireframes, User Profile and Cart buttons were moved to top navigation, whilst the other app pages remained in the bottom. This change was made to distinguish between "user specific shortcuts" and "general app pages". Further alterations were made to address the other concerns.</p>
                 </article>
             </section>
@@ -156,8 +158,8 @@
                 <h2>Brand Identity</h2>
                 <p>Before turning the wireframes into a high-fidelity Figma Prototype, a brand identity was developed.</p>
                 <p>The identity was developed by starting at a lower-level of abstraction, using design elements like colour, typography and scale. Concerns of accessibility such as contrast and accessibility were considered at this point. Components were then produced at a higher-level of abstraction, focused on how the ideas in wireframes could be developed into usable touch-friendly elements on a small screen.</p>
-                <img src="../res/img/library-style-tile.jpg" width="100%" alt="Style Tile for the Brand Identity" />
-                <img src="../res/img/library-colour-guides.jpg" width="100%" alt="Style Tile for the Brand Identity" />
+                <img src="/res/img/library-style-tile.jpg" width="100%" alt="Style Tile for the Brand Identity" />
+                <img src="/res/img/library-colour-guides.jpg" width="100%" alt="Style Tile for the Brand Identity" />
             </section>
 
             <section>
@@ -173,14 +175,7 @@
             </section>
 
         </main>
-        <footer></footer>
+        <load src="/components/footer.html" />
     </div>
 </body>
-<script src="../src/index.js" ></script>
-<script>
-    createPageHeader();
-    createPageFooter();
-    createMobileNav();
-    createFloatingNav();
-</script>
 </html>

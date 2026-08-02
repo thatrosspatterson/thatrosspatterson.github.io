@@ -1,0 +1,20 @@
+<div id="mobile-nav">
+    <div id="mobile-nav-menu">
+        <load src="components/navlinks.html" />
+    </div>
+    <button id="mobile-nav-button">Menu</button>
+</div>
+<script>
+    function toggleMobileNavVisibility() {
+        const mobileNav = $('#mobile-nav')
+        mobileNav.toggleClass("is-visible");
+        if (mobileNav.hasClass("is-visible")) {
+            mobileNav.find("#mobile-nav-button").text("Hide Menu");
+        }else {
+            mobileNav.find("#mobile-nav-button").text("Menu");
+        }
+        
+    }
+    const mobileNavButton = document.querySelector("#mobile-nav-button");
+    mobileNavButton.addEventListener("click", toggleMobileNavVisibility);    
+</script>

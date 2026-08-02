@@ -15,90 +15,49 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
+    <load src="components/floating-nav.html" />
     <div id="canvas">
-        <header></header>
+        <load src="components/mobile-nav.html" />
+        <load src="components/header.html" />
         <main>
             <section>
                 <div class="project-card-container">
-                    <div class="project-card">
-                        <article>               
-                            <div class="project-card-image">
-                                <img src="res/img/thumb/thumb-uc-games-catalog.jpg" width="250px" alt="Image of UC Games Catalog" />
-                            </div>
-                            <div class="project-card-text">
-                                <div class="project-card-info">
-                                    <h3><a href="projects/game-catalog.html">UC Games Catalog</a></h3>
-                                    <p>A university group project that houses listings of games produced at UC, and information about them.</p>
-                                </div>
-                                <div class="project-card-tags">
-                                    <span class="project-card-tag tag-date">2025</span>
-                                    <span class="project-card-tag tag-type">Web Project</span>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="project-card">
-                        <article>               
-                            <div class="project-card-image">
-                                <img src="res/img/thumb/thumb-millionaire.jpg" width="250px" alt="Image of Millionaire project" />
-                            </div>
-                            <div class="project-card-text">
-                                <div class="project-card-info">
-                                    <h3><a href="projects/millionaire.html">Who Wants to be a Millionaire?</a></h3>
-                                    <p>A web-based version of the game using front-end web design complete with music, animations and rotating questions.</p>
-                                </div>
-                                <div class="project-card-tags">
-                                    <span class="project-card-tag tag-date">2024-2025</span>
-                                    <span class="project-card-tag tag-type">Web Project</span>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="project-card">
-                        <article>               
-                            <div class="project-card-image">
-                                <img src="res/img/thumb/thumb-elephant-book.jpg" width="250px" alt="A Hat for an Elephant Logo" />
-                            </div>
-                            <div class="project-card-text">
-                                <div class="project-card-info">
-                                    <h3><a href="projects/elephant-book.html">A Hat for an Elephant</a></h3>
-                                    <p>The digitisation of a hand written and illustrated children's book.</p>
-                                </div>
-                                <div class="project-card-tags">
-                                    <span class="project-card-tag tag-date">2025</span>
-                                    <span class="project-card-tag tag-type">Publication</span>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="project-card">
-                        <article>               
-                            <div class="project-card-image">
-                                <img src="res/img/thumb/thumb-toy-library.jpg" width="250px" alt="Image of Toy Library" />
-                            </div>
-                            <div class="project-card-text">
-                                <div class="project-card-info">
-                                    <h3><a href="projects/toy-library.html">Toy Library Figma App</a></h3>
-                                    <p>A university project focused on developing a core user-flow for a Toy Library whilst addressing the needs of accessibility.</p>
-                                </div>
-                                <div class="project-card-tags">
-                                    <span class="project-card-tag tag-date">2024</span>
-                                    <span class="project-card-tag tag-type">Figma Prototype</span>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
+                    <load src="components/project-card.html" 
+                        name="UC Games Catalog" 
+                        img="res/img/thumb/thumb-uc-games-catalog.jpg"
+                        href="projects/game-catalog"
+                        description="A university group project that houses listings of games produced at UC, and information about them."
+                        year="2025"
+                        type="Web Project"
+                    />
+                    <load src="components/project-card.html" 
+                        name="Who Wants to be a Millionaire?" 
+                        img="res/img/thumb/thumb-millionaire.jpg"
+                        href="projects/millionaire"
+                        description="A web-based version of the game using front-end web design complete with music, animations and rotating questions."
+                        year="2024-2025"
+                        type="Web Project"
+                    />
+                    <load src="components/project-card.html" 
+                        name="A Hat for an Elephant" 
+                        img="res/img/thumb/thumb-elephant-book.jpg"
+                        href="projects/elephant-book"
+                        description="The digitisation of a hand written and illustrated children's book."
+                        year="2025"
+                        type="Publication"
+                    />
+                    <load src="components/project-card.html" 
+                        name="Toy Library Figma App" 
+                        img="res/img/thumb/thumb-toy-library.jpg"
+                        href="projects/toy-library"
+                        description="A university project focused on developing a core user-flow for a Toy Library whilst addressing the needs of accessibility."
+                        year="2024"
+                        type="Figma Prototype"
+                    />
                 </div>
             </section>
         </main>
-        <footer></footer>
+        <load src="components/footer.html" />
     </div>
 </body>
-<script src="src/index.js" ></script>
-<script>
-    createPageHeader();
-    createPageFooter();
-    createMobileNav();
-    createFloatingNav();
-</script>
 </html>

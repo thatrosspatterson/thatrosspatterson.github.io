@@ -5,23 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Ross Patterson Project, Wesbite, UC Games Catalog, React">
     <title>UC Games Catalog | Ross Patterson</title>
-    <link rel="icon" href="../res/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="../src/styles.css">
-    <link rel="stylesheet" href="../src/common.css">
-    <link rel="stylesheet" href="../src/project.css">
+    <link rel="icon" href="/res/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/src/styles.css">
+    <link rel="stylesheet" href="/src/common.css">
+    <link rel="stylesheet" href="/src/project.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet"> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
+    <load src="/components/floating-nav.html" />
     <div id="canvas">
-        <header></header>
+        <load src="/components/mobile-nav.html" />
+        <load src="/components/header.html" />
         <main>
             <section>
                 <div class="hero-shot">
                     <div class="hero-shot-image">
-                        <img src="../res/img/uc-games-catalog.png" alt="The Landing page of the catalog." />
+                        <img src="/res/img/uc-games-catalog.png" alt="The Landing page of the catalog." />
                     </div>
                     <div class="hero-shot-overlay">
                         <article>
@@ -125,7 +127,7 @@
                 <p>We used ideas discovered in our research and combined them with our own ideas tailored to the project and stakeholder needs.</p>
                 <article>
                     <figure>
-                        <img src="../res/img/uc-catalog-sketch-1.jpg" width="100%" alt="Ideation of sorting and filtering components"/>
+                        <img src="/res/img/uc-catalog-sketch-1.jpg" width="100%" alt="Ideation of sorting and filtering components"/>
                         <figcaption>Individual ideas for filtering and sorting components.</figcaption>
                     </figure>
                     <h3>Sketches</h3>
@@ -143,7 +145,7 @@
                         In doing so, we created two "unified wireframes", one representing the catalog/home page, and the other being the game page.
                     </p>
                     <figure>
-                        <img src="../res/img/uc-catalog-sketch-2.jpg" width="100%" alt="Ideation of filtering and sorting screen"/>
+                        <img src="/res/img/uc-catalog-sketch-2.jpg" width="100%" alt="Ideation of filtering and sorting screen"/>
                         <figcaption>"Assembly" of idealised components into a screen.</figcaption>
                     </figure>
                 </article>
@@ -159,13 +161,13 @@
                     <div class="project-info-container">
                         <div>
                             <figure>
-                                <img src="../res/img/uc-catalog-figma-1.jpg" width="100%" alt="Figma Components"/>
+                                <img src="/res/img/uc-catalog-figma-1.jpg" width="100%" alt="Figma Components"/>
                                 <figcaption>Figma Components</figcaption>
                             </figure>
                         </div>
                         <div>
                             <figure>
-                                <img src="../res/img/uc-catalog-figma-2.jpg" width="100%" alt="Figma Screens"/>
+                                <img src="/res/img/uc-catalog-figma-2.jpg" width="100%" alt="Figma Screens"/>
                                 <figcaption>Figma Screens</figcaption>
                             </figure>
                         </div>
@@ -275,12 +277,6 @@
         </main>
         <footer></footer>
     </div>
+    <load src="/components/footer.html" />
 </body>
-<script src="../src/index.js" ></script>
-<script>
-    createPageHeader();
-    createPageFooter();
-    createMobileNav();
-    createFloatingNav();
-</script>
 </html>

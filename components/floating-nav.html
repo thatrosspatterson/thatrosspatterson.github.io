@@ -1,0 +1,27 @@
+<div id="floating-nav">
+    <div>
+        <div>
+            <a href="/"><span>Ross Patterson</span></a>
+        </div>
+        <div>
+            <load src="components/navlinks.html" />
+        </div>
+    </div>
+</div>
+
+<script>
+    /**
+     * Scroll handler to track how far down the user has scrolled
+     * to determine if floating nav should be pulled up or down
+     */
+    $(document).on("scroll", function(){
+        let nav = document.querySelector('#floating-nav');
+        let docScroll = $(document).scrollTop();
+
+        if(docScroll >= nav.offsetHeight * 4) { 
+            nav.classList.add('is-visible');
+        }else {
+            nav.classList.remove('is-visible');
+        }
+    });
+</script>

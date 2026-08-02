@@ -5,23 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Ross Patterson Project, Website, Who Wants to be a Millionaire?, Front-end">
     <title>Who Wants to be a Millionaire? | Ross Patterson</title>
-    <link rel="icon" href="../res/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="../src/styles.css">
-    <link rel="stylesheet" href="../src/common.css">
-    <link rel="stylesheet" href="../src/project.css">
+    <link rel="icon" href="/res/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/src/styles.css">
+    <link rel="stylesheet" href="/src/common.css">
+    <link rel="stylesheet" href="/src/project.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet"> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
+    <load src="/components/floating-nav.html" />
     <div id="canvas">
-        <header></header>
+        <load src="/components/mobile-nav.html" />
+        <load src="/components/header.html" />
         <main>
             <section>
                 <div class="hero-shot">
                     <div class="hero-shot-image">
-                        <img src="../res/img/millionaire1.png" alt="An image of the millionaire game." />
+                        <img src="/res/img/millionaire1.png" alt="An image of the millionaire game." />
                     </div>
                     <div class="hero-shot-overlay">
                         <article>
@@ -93,13 +95,13 @@
                     <div class="project-info-container">
                         <article>
                             <figure>
-                                <img src="../res/img/millionaire-demo-1.jpg" width="100%" alt="Front end appearance"/>
+                                <img src="/res/img/millionaire-demo-1.jpg" width="100%" alt="Front end appearance"/>
                                 <figcaption>Front end, interface with controls and familiar elements.</figcaption>
                             </figure>
                         </article>
                         <article>
                             <figure>
-                                <img src="../res/img/millionaire-demo-2.jpg" width="100%" alt="Backend code"/>
+                                <img src="/res/img/millionaire-demo-2.jpg" width="100%" alt="Backend code"/>
                                 <figcaption>Backend. L to R: question format, element creator, quiz life-cycle.</figcaption>
                             </figure>                    
                         </article>
@@ -116,7 +118,7 @@
                         </article>
                         <article>
                             <figure>
-                                <img src="../res/img/millionaire-demo-3.jpg" width="100%" alt="Code for audio object definitions and functions"/>
+                                <img src="/res/img/millionaire-demo-3.jpg" width="100%" alt="Code for audio object definitions and functions"/>
                                 <figcaption>Original audio object definitions and functions. Ughhh...</figcaption>
                             </figure>                    
                         </article>
@@ -135,7 +137,7 @@
                         </div>
                         <div>
                             <figure>
-                                <img src="../res/img/millionaire-demo-4.jpg" width="100%" alt="Revised quiz format and music management"/>
+                                <img src="/res/img/millionaire-demo-4.jpg" width="100%" alt="Revised quiz format and music management"/>
                                 <figcaption>Revised quiz format and music management</figcaption>
                             </figure>  
                         </div>
@@ -150,7 +152,7 @@
                         </div>
                         <div>
                             <figure>
-                                <img src="../res/img/millionaire-demo-5.jpg" width="100%" alt="Revised Host Screen with Lifelines and Statistics"/>
+                                <img src="/res/img/millionaire-demo-5.jpg" width="100%" alt="Revised Host Screen with Lifelines and Statistics"/>
                                 <figcaption>Revised Host Screen with Lifelines and Statistics</figcaption>
                             </figure>  
                         </div>
@@ -170,7 +172,7 @@
                         </div>
                         <div>
                             <figure>
-                                <img src="../res/img/millionaire-demo-6.jpg" width="100%" alt="Initial Player Screen"/>
+                                <img src="/res/img/millionaire-demo-6.jpg" width="100%" alt="Initial Player Screen"/>
                                 <figcaption>Initial Player Screen</figcaption>
                             </figure>  
                         </div>
@@ -182,13 +184,13 @@
                     <div class="project-info-container">
                         <div>
                             <figure>
-                                <img src="../res/img/millionaire-demo-7.jpg" width="100%" alt="Revised Host Screen using Player Screen Layout"/>
+                                <img src="/res/img/millionaire-demo-7.jpg" width="100%" alt="Revised Host Screen using Player Screen Layout"/>
                                 <figcaption>Revised Host Screen using Player Screen Layout</figcaption>
                             </figure>  
                         </div>
                         <div>
                             <figure> 
-                                <img src="../res/img/millionaire-demo-8.jpg" width="100%" alt="Player Screen"/>
+                                <img src="/res/img/millionaire-demo-8.jpg" width="100%" alt="Player Screen"/>
                                 <figcaption>Player Screen</figcaption>
                             </figure> 
                         </div>
@@ -219,7 +221,7 @@
                         </div>
                         <div>
                             <figure>
-                                <img src="../res/img/millionaire-demo-9.png" width="100%" alt="Ask the Audience Lifeline"/>
+                                <img src="/res/img/millionaire-demo-9.png" width="100%" alt="Ask the Audience Lifeline"/>
                                 <figcaption>Ask the Audience (Host Screen)</figcaption>
                             </figure> 
                         </div>
@@ -238,12 +240,12 @@
                     <h3>Bringing the Logo to Life</h3>
                     <p>Initially I used a static picture of the Millionaire Logo for the centre of the player screen. However, I always felt this was rather bland and could be used as an opportunity to make the experience more "immersive" by having it respond to events. This is true also for the 2018 reboot of the show, which features a large animated logo in the background. Most of the animations and states I chose to model directly from the show, while I took creative liberty with some of the others.</p>
                     <figure>
-                        <img src="../res/img/millionaire-demo-logos-1.jpg" width="100%" alt="Millionaire Logos"/>
+                        <img src="/res/img/millionaire-demo-logos-1.jpg" width="100%" alt="Millionaire Logos"/>
                         <figcaption>Some of the logo states</figcaption>
                     </figure> 
                     <p>The logo is really brought to life with animations, using colour, scaling and many other transformations. The logo is created simply by using many html elements, plus some images to overlay the typeface. A canvas is only used to produce particles. Due to the number of layers, rendering the page can be demanding at times.</p>
                     <figure>
-                        <img src="../res/img/millionaire-demo-logos-2.jpg" width="100%" alt="More Millionaire Logos"/>
+                        <img src="/res/img/millionaire-demo-logos-2.jpg" width="100%" alt="More Millionaire Logos"/>
                         <figcaption>More logo states</figcaption>
                     </figure> 
                 </article>
@@ -277,14 +279,7 @@
             </section>
 
         </main>
-        <footer></footer>
+        <load src="/components/footer.html" />
     </div>
 </body>
-<script src="../src/index.js" ></script>
-<script>
-    createPageHeader();
-    createPageFooter();
-    createMobileNav();
-    createFloatingNav();
-</script>
 </html>

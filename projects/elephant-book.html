@@ -5,23 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Ross Patterson Project, Publication, A Hat for an Elephant">
     <title>A Hat for an Elephant | Ross Patterson</title>
-    <link rel="icon" href="../res/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="../src/styles.css">
-    <link rel="stylesheet" href="../src/common.css">
-    <link rel="stylesheet" href="../src/project.css">
+    <link rel="icon" href="/res/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/src/styles.css">
+    <link rel="stylesheet" href="/src/common.css">
+    <link rel="stylesheet" href="/src/project.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet"> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
+    <load src="/components/floating-nav.html" />
     <div id="canvas">
-        <header></header>
+        <load src="/components/mobile-nav.html" />
+        <load src="/components/header.html" />
         <main>
             <section>
                 <div class="hero-shot">
                     <div class="hero-shot-image">
-                        <img src="../res/img/elephant-thumbnail.png" alt="A Hat for an Elephant Logo." />
+                        <img src="/res/img/elephant-thumbnail.png" alt="A Hat for an Elephant Logo." />
                     </div>
                     <div class="hero-shot-overlay">
                         <article>
@@ -59,13 +61,13 @@
                 <div class="project-info-container">
                     <article>
                         <figure>
-                            <img src="../res/img/elephant-demo-before.jpg" width="100%" alt="Book before digitisation"/>
+                            <img src="/res/img/elephant-demo-before.jpg" width="100%" alt="Book before digitisation"/>
                             <figcaption>The book before digitisation.</figcaption>
                         </figure>
                     </article>
                     <article>
                         <figure>
-                            <img src="../res/img/elephant-demo-after.jpg" width="100%" alt="Book after digitisation"/>
+                            <img src="/res/img/elephant-demo-after.jpg" width="100%" alt="Book after digitisation"/>
                             <figcaption>The book after digitisation.</figcaption>
                         </figure>                    
                     </article>
@@ -76,11 +78,11 @@
                 <article>
                     <h2>Vectorising the Logo</h2>
                     <p>The first task I did when digitising this book was to re-create the logo as a vector object. As each of the letters in the original logo could be derived from combining circles, triangles and rectangles in different ways, I mainly used boolean methods to work out the main shape of each letter.</p>
-                    <img src="../res/img/elephant-demo-1.png" width="100%" alt="Elephant Logo Making"/>
+                    <img src="/res/img/elephant-demo-1.png" width="100%" alt="Elephant Logo Making"/>
                     <p>I further adjusted and smoothed out parts of letters using pen and node tools. Finally, I rounded the corners of each letter to soften the appearance of the logo.</p>
-                    <img src="../res/img/elephant-demo-2.png" width="100%" alt="Elephant Logo Making"/>
+                    <img src="/res/img/elephant-demo-2.png" width="100%" alt="Elephant Logo Making"/>
                     <p>Some letters required a bit more finesse, while others were simpler or could be created by re-using existing letters. I accompanied the main logo letters with a typeface for the "for an" part of the logo. The typeface I used did not have a matchning italicized font, so I warped it.</p>
-                    <img src="../res/img/elephant-demo-3.png" width="100%" alt="Elephant Logo Making"/>
+                    <img src="/res/img/elephant-demo-3.png" width="100%" alt="Elephant Logo Making"/>
                 </article>
             </section>
 
@@ -90,16 +92,16 @@
                     <h3>Bringing Illustrations to Life</h3>
                     <p>Most of the work focused on the 20+ pages of body matter. My relative wanted the handwriting removed and replaced with digital text, but there was some extra work that would need to be done to standardise the appearance of the pages.</p>
                     <p>My process started by removing handwriting that covered the illustrations. This was achieved by using different selection and healing tools within Affinity. I would then isolate the illustration from the main page. This was necessary to remove the texture of the watercolour paper, and allow for plain white to be used as the page background colour instead.</p>
-                    <img src="../res/img/elephant-demo-4.png" width="100%" alt="Elephant Logo Making"/>
+                    <img src="/res/img/elephant-demo-4.png" width="100%" alt="Elephant Logo Making"/>
                     <p>I would also remove any gridlines or pencil marks leftover from the initial lettering. It was important in this process to use healing tools spearingly, to keep the illustrations as close to their original appearance.</p>
                     <p>Following the isolation of the illustration, it would then need to be colour-adjusted due to the colour of the paper, whilst also having the background blend out smoothly into what would now be pure white pages.</p>
-                    <img src="../res/img/elephant-demo-5.png" width="100%" alt="Elephant Logo Making"/>
+                    <img src="/res/img/elephant-demo-5.png" width="100%" alt="Elephant Logo Making"/>
                     <p>I adjusted the background and foreground separately. I completely re-coloured the background as that was the easiest way to remove the blue whilst retaining the tonal values, and feathered it out to help soften the edges. The foreground received more minor adjustments. The changes resulted in the illustrations being more vivid and brighter overall.</p>
                 </article>
                 <article>
                     <h3>Page Composition</h3>
                     <p>To put everything back together, I first chose a typeface which I felt was similar to the handwriting. Whilst not identical of course, I chose it for its thinness and roundness. With approval, I also added a white outline to the body text to create clarity on overlapping.</p>
-                    <img src="../res/img/elephant-demo-6.png" width="100%" alt="Elephant Logo Making"/>
+                    <img src="/res/img/elephant-demo-6.png" width="100%" alt="Elephant Logo Making"/>
                     <p>All the pages used the same master page inside Affinity Publisher. This master included a 10mm margin and a 20mm guide on all sides. The 20mm guide was used as the edge for text, whilst the main 10mm margin would be for the illustrations.</p>
                 </article>
             </section>
@@ -107,20 +109,13 @@
             <section>
                 <h2>Before and After</h2>
                 <p>See some of the transformations below.</p>
-                <img src="../res/img/elephant-demo-7.jpg" width="100%" alt="Elephant Logo Making"/>
+                <img src="/res/img/elephant-demo-7.jpg" width="100%" alt="Elephant Logo Making"/>
                 <article class="disclosure">
                     <p>In respect of intellectual property, a complete pdf of this publication is not publicly accessible.</article></p>
             </section>
 
         </main>
-        <footer></footer>
+        <load src="/components/footer.html" />
     </div>
 </body>
-<script src="../src/index.js" ></script>
-<script>
-    createPageHeader();
-    createPageFooter();
-    createMobileNav();
-    createFloatingNav();
-</script>
 </html>
